@@ -1,0 +1,7 @@
+set terminal png
+set style data lines
+set xlabel "Time (seconds)"
+set ylabel "Bitrate (Mbits/s)"
+plot [00:10] "TCP.log" using 1:2 title "UDP0", \
+	     "TCP.log" using 1:3 title "UDP1", \
+	     "TCP.log" using 1:4 title "UDP2"
